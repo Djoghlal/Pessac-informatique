@@ -109,7 +109,7 @@ nav {
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
-  background-attachment: fixed !important;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   box-shadow: rgb(0 0 0 / 18%) 0px 2px 4px;
