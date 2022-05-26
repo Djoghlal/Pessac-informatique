@@ -30,9 +30,9 @@
             <span></span>
           </button>
           <div class="navlinks-container">
-            <a href="#">A propos</a>
-            <a href="#">Prestations</a>
-            <a href="#">Formations</a>
+            <a href="#about">A propos</a>
+            <a href="#services">Prestations</a>
+            <a href="#education">Formations</a>
             <a href="#">Boutique</a>
           </div>
         </div>
@@ -42,8 +42,9 @@
             <img src="./public/images/chat.svg" alt="chat-icon">
           </a>
           <div class="sign-btns">
-            
-            <button type="button">Contact</button>
+            <a href="#contact">
+              <button type="button">Contact</button>
+            </a>
           </div>
         </div>
       </nav>
@@ -53,14 +54,14 @@
       <p>Parain Informatique Pessac, à votre service dans le secteur de Pessac en Gironde</p>
     </section>
 
-    <section class="section-about">
+    <section class="section-about" id="about">
       <div class="container container-about">
         <h2><i class="far fa-address-card"></i> Qui sommes-nous ?</h2>
         <p>Pierre Parain, spécialisé dans les métiers de l'informatique, se met à votre service pour des prestations de dépannages, de ventes ou de formations. Déplacement limitée dans la zone de Pessac et alentours afin d'avoir des délais d'intervention à votre convenance.</p>
       </div>
     </section>
 
-    <section class="section-service">
+    <section class="section-service" id="services">
       <div class="container container-service">
         <h2>Des services pratiques <i class="fas fa-briefcase"></i></h2>
         <div class="service-list">
@@ -114,7 +115,7 @@
       </div>
     </section>
 
-    <section class="section-education">
+    <section class="section-education" id="education">
       <div class="container container-education">
         <img src="./public/images/education.jpg" alt="Formations" />
         <article class="education-card">
@@ -124,7 +125,7 @@
       </div>
     </section>
 
-    <section class="section-contact">
+    <section class="section-contact" id="contact">
       <div class="container container-contact">
         <h2>Comment nous joindre ou nous trouver ?</h2>
         <div class="contact-card">
@@ -157,6 +158,12 @@
         </div>
       </div>
     </section>
+
+    <footer>
+      <div class="container container-footer">
+        <p>Copyright © parain informatique 2022 / <a href="#">Mentions légales</a></p>
+      </div>
+    </footer>
 
     <script src="./public/js/script.js"></script>
   </body>

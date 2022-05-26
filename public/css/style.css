@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
@@ -105,7 +106,7 @@ nav {
 .section-tag {
   height: 400px;
   background-color: rgb(64, 128, 128);
-  background-image: url(../images/banner.jpg);
+  background-image: url('../images/banner.jpg');
   background-repeat: no-repeat;
   background-position: bottom;
   background-size: cover;
@@ -125,7 +126,7 @@ nav {
   font-weight: 500;
 }
 
-.section-about, .section-service, .section-education, .section-contact {
+.section-about, .section-service, .section-education, .section-contact, footer {
   padding: 5%;
   display: flex;
   justify-content: center;
@@ -136,7 +137,7 @@ nav {
   width: 1024px;
 }
 
-.container-about, .container-service, .container-education, .container-contact {
+.container-about, .container-service, .container-education, .container-contact, .container-footer {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -276,6 +277,17 @@ nav {
   line-height: 30px;
 }
 
+footer {
+  width: 100%;
+  background-color: #373A42;
+  padding: 50px 0px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.container-footer a {
+  color: rgba(255, 255, 255, 0.8);
+}
 
 
 
