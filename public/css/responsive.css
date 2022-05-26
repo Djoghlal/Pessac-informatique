@@ -135,6 +135,10 @@
     .contact-info {
       width: 100%;
     }
+
+    .service-card {
+      width: 98%;
+    }
   
   }
   
@@ -149,9 +153,5 @@
 
     .section-about, .section-service {
       padding: 8%;
-    }
-
-    .service-card {
-      width: 99%;
     }
 }
