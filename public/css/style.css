@@ -107,8 +107,9 @@ nav {
   background-color: rgb(64, 128, 128);
   background-image: url(../images/banner.jpg);
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: bottom;
   background-size: cover;
+  background-attachment: fixed;
   display: flex;
   justify-content: center;
   box-shadow: rgb(0 0 0 / 18%) 0px 2px 4px;
