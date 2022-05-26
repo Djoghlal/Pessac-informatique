@@ -97,14 +97,43 @@
       display: none;
     }
 
-    .sign-user {
+    .contact {
       display: block;
       cursor: pointer;
       border: none;
     }
 
-    .sign-user img {
+    .contact img {
       width: 20px;
+    }
+
+    .container-about h2, .container-service h2 {
+      margin-bottom: 20px;
+    }
+
+    .container-education img {
+      width: 95%;
+      margin-bottom: 20px;
+    }
+
+    .education-card {
+      width: 100%;
+    }
+
+    .education-card h2 {
+      padding: 5px;
+    }
+
+    .contact-map {
+      margin-bottom: 30px;
+    }
+
+    .contact-map iframe {
+      width: 100%;
+    }
+
+    .contact-info {
+      width: 100%;
     }
   
   }
@@ -116,5 +145,9 @@
     
     .nav-icon span {
       font-size: 20px;
+    }
+
+    .section-about, .section-service {
+      padding: 8%;
     }
 }

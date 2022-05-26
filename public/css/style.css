@@ -12,10 +12,11 @@ body {
 }
 
 nav {
-  position: fixed;
+  /* position: fixed; */
   width: 100%;
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 15px 25px;
   background: #fafafa;
   box-shadow: inset 0px -1px 0px #c5c5c6;
@@ -25,20 +26,23 @@ nav {
   display: flex;
   align-items: center;
   text-decoration: none;
-  margin-right: 20px;
+  margin-right: 60px;
 }
 
 .nav-icon span {
   font-family: Roboto Flex, sans-serif;
   font-size: 25px;
   margin-left: 20px;
-  font-weight: 400;
-  color: #333;
+  font-weight: 100;
+  text-decoration: none;
+  color: #408080;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
 .nav-icon img {
   width: 40px;
-  transform: rotate(-17deg) translateX(5px);
+  transform: rotate(-10deg) translateX(5px);
 }
 
 .hamburger {
@@ -48,11 +52,12 @@ nav {
 .navlinks-container a {
   margin: 0 10px;
   font-size: 16px;
-  font-weight: 500;
   text-decoration: none;
   color: #414141;
   display: inline-block;
   position: relative;
+  font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .navlinks-container a::after {
@@ -85,13 +90,196 @@ nav {
   border-radius: 5px;
   cursor: pointer;
   border: none; 
+  color: #FFFFFF;
 }
 
-.sign-btns button:nth-child(2) {
+.sign-btns button:nth-child(1) {
   border: none;
-  background: #92c3eeb7;
+  background: #408080;
 }
 
-.sign-user {
+.contact {
   display: none;
+}
+
+.section-tag {
+  height: 400px;
+  background-color: rgb(64, 128, 128);
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  box-shadow: rgb(0 0 0 / 18%) 0px 2px 4px;
+}
+
+.section-tag p {
+  width: 100%;
+  align-self: flex-end;
+  padding: 6px;
+  background-color: rgba(255, 255, 255, 0.7);
+  text-align: center;
+  color: #408080;
+  font-weight: 500;
+}
+
+.section-about, .section-service, .section-education, .section-contact {
+  padding: 5%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 1024px;
+}
+
+.container-about, .container-service, .container-education, .container-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.container-about h2, .container-service h2, .container-education h2, .container-contact h2 {
+  font-family: Roboto Flex, sans-serif;
+  font-size: 20px;
+  font-weight: 300;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+}
+
+.container-about h2 {
+  color: #408080;
+}
+
+.container-about i {
+  margin-right: 5px;
+}
+
+.container-about p {
+  color: #777777;
+}
+
+.section-service {
+  background-color:rgb(64, 128, 128);
+}
+
+.container-service h2 {
+  color: #FFFFFF;
+}
+
+.container-service i {
+  margin-left: 5px;
+}
+
+.service-list {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.service-card {
+  width: 400px;
+  height: 200px;
+  text-align: left;
+  background-color: rgb(225, 225, 225);
+  border-radius: 6px;
+  overflow: hidden;
+  box-shadow: 0px 2px 18px 0px rgb(0 0 0 / 30%);
+  margin-bottom: 30px;
+}
+
+.service-card h3 {
+  text-align: center;
+  margin-bottom: 15px;
+  margin-top: 15px;
+  font-family: Roboto Flex, sans-serif;
+  color: #0f4242;
+  font-size: 17px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.service-card ul {
+  margin-top: 20px;
+  margin-left: 20px;
+  list-style: none;
+}
+
+.service-card li {
+  color:rgb(64, 128, 128);
+}
+
+.section-education {
+  background-color: rgb(224, 223, 223);
+}
+
+.container-education {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.education-card {
+  width: 45%;
+}
+
+.education-card h2 {
+  padding: 10px;
+  background-color:rgb(64, 128, 128);
+  color: #FFFFFF;
+}
+
+.education-card p {
+  color:#777777;
+}
+
+.container-contact h2 {
+  color: #408080;
+}
+
+.contact-card {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.contact-map iframe {
+  width: 640px;
+  height:480px;
+}
+
+.contact-info {
+  width: 30%;
+  font-size: 18px;
+  color: #aab1bf;
+}
+
+.contact-info ul {
+  list-style-type: none;
+}
+
+.contact-info li {
+  margin-bottom: 30px;
+}
+
+.contact-info p {
+  line-height: 30px;
+}
+
+
+
+
+.separate {
+  width: 80%;
+  height: 1px;
+  margin: 0px auto;
 }
