@@ -97,10 +97,6 @@
       display: none;
     }
 
-    .service-card {
-      width: 95%;
-    }
-
     .contact {
       display: block;
       cursor: pointer;
@@ -153,5 +149,9 @@
 
     .section-about, .section-service {
       padding: 8%;
+    }
+
+    .service-card {
+      width: 99%;
     }
 }
