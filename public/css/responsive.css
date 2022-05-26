@@ -97,6 +97,10 @@
       display: none;
     }
 
+    .service-card {
+      width: 95%;
+    }
+
     .contact {
       display: block;
       cursor: pointer;
