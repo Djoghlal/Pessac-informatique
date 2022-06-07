@@ -19,3 +19,9 @@ new ResizeObserver(entries => {
   }
 }).observe(document.body)
 
+
+
+const loader = document.querySelector('.loader');
+window.addEventListener('load', () => {
+  loader.classList.add('foudu-out');
+})
