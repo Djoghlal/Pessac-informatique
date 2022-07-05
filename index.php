@@ -1,7 +1,7 @@
 <?php
-  include_once('./API/includes/start.php');
-  include_once('./API/includes/loader.php');
-  include_once('./API/includes/header.php');
+  include_once('./includes/start.php');
+  //include_once('./API/includes/loader.php');
+  include_once('./includes/header.php');
 ?>
     
   <section class="section-tag">
@@ -114,8 +114,8 @@
   </section>
 
 <?php
-  include_once('./API/includes/footer.php');
-  include_once('./API/includes/end.php');
+  include_once('./includes/footer.php');
+  include_once('./includes/end.php');
 ?>
 
 <script src="./public/js/script.js"></script>

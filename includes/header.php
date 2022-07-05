@@ -14,7 +14,7 @@
         <a href="#about">A propos</a>
         <a href="#services">Prestations</a>
         <a href="#education">Formations</a>
-        <a href="#">Boutique</a>
+        <a href="./shop.php">Boutique</a>
         </div>
     </div>
 
