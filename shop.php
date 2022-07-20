@@ -1,57 +1,33 @@
 <?php
+  session_start();
+
   include_once('./API/BDD/sql.php');
-  include_once('./API/functions/shopping.php');
-  include_once('./API/class/shopping.php');
+  include_once('./API/functions/func_shopping.php');
+  include_once('./API/functions/func_auth.php');
+  include_once('./API/class/class_shopping.php');
+
   include_once('./includes/start.php');
   include_once('./includes/header.php');
-?>
-    
-  <section class="section-tag">
-    <p>Parain Informatique Pessac, à votre service dans le secteur de Pessac en Gironde</p>
-  </section>
+  include_once('./includes/tag.php');
 
-  <section class="section-shop">
-    <div class="container container-shop">
-      <h2><i class="fas fa-store-alt"></i> Boutique</h2>
-      <form method="#">
-        <select name="pets" id="pet-select">
-          
-            <option value="">-- Selectionner votre recherche --</option>
+  if (isset($_GET['action'])) {
+    $getRoute = htmlentities(stripcslashes($_GET['action']));
+  } else {
+    $getRoute = '';
+  }
 
-            <?php
+  switch ($getRoute) {
+    case 'getItems':
+      include_once('./includes/shopping/get-items.php');
+      break;
+    case 'addItem':
+      include_once('./includes/shopping/add-item.php');
+      break;
+    default:
+      echo 'Erreur 404';
+  }
+  
 
-              $countItems = count($catItems);
-
-              for ($i = 0; $i < $countItems; $i++) {
-                echo '<option value="'.$catItems[$i].'">'.$titleItems[$i].'</option>';
-              }
-
-            ?>
-
-        </select>
-      </form>
-
-      <div class="container-item">
-
-        <?php 
-
-          for ($i = 0; $i < $countItems; $i++) {
-            echo '<h3>'.$titleItems[$i].'</h3><ul>'; 
-
-              getItem($dbh, $catItems[$i]); 
-
-            echo '</ul>';
-          }
-
-        ?>
-                      
-      </div>
-
-
-    </div>
-  </section>
-
-<?php
   include_once('./includes/footer.php');
   include_once('./includes/end.php');
 ?>
