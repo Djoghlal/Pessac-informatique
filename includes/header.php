@@ -5,11 +5,11 @@
     </a>
 
     <div class="main-navlinks">
-        <button class="hamburger" type="button">
+        <div class="hamburger" type="button">
         <span></span>
         <span></span>
         <span></span>
-        </button>
+        </div>
         <div class="navlinks-container">
         <a href="./index.php#about">A propos</a>
         <a href="./index.php#services">Prestations</a>

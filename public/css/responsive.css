@@ -145,6 +145,8 @@
     }
   }
   
+
+
   @media (max-width: 500px) {
     .nav-icon img {
       width: 30px;
@@ -156,5 +158,22 @@
 
     .section-about, .section-service {
       padding: 8%;
+    }
+
+    .container-shop {
+      width: 100%;
+      padding: 0;
+    }
+
+    .container-shop h2 {
+      margin: 0;
+    }
+
+    .container-shop select {
+      width: 100%;
+    }
+
+    .card-item {
+      width: 100%;
     }
 }

@@ -18,10 +18,3 @@ new ResizeObserver(entries => {
     navLinksContainer.style.transition = "none"
   }
 }).observe(document.body)
-
-
-
-// const loader = document.querySelector('.loader');
-// window.addEventListener('load', () => {
-//   loader.classList.add('foudu-out');
-// })

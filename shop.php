@@ -24,7 +24,7 @@
       include_once('./includes/shopping/add-item.php');
       break;
     default:
-      echo 'Erreur 404';
+      header('Location: ./404.php');
   }
   
 
